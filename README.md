@@ -74,6 +74,6 @@
 - 整体特效增强玩家释放技能时的能量感和打击反馈。
 
 ## 项目展示
-**在线试玩**：[GitHub Pages](GitHub-Pages) - 项目已完整实现玩法机制、角色技能与视觉特效，游戏Demo资源齐全且运行稳定。
+**在线试玩**：[GitHub Pages](https://protosswind.github.io/Knight-Dash/) - 项目已完整实现玩法机制、角色技能与视觉特效，游戏Demo资源齐全且运行稳定。
 
-**演示视频**：[MP4](demo.mp4) - 视频内容为项目早期版本，最终版本已完善泛光效果与贴图资源。
+**演示视频**：[MP4](https://github.com/ProtossWind/Knight-Dash/raw/refs/heads/main/demo.mp4) - 视频内容为项目早期版本，最终版本已完善泛光效果与贴图资源。
