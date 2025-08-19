@@ -55,6 +55,26 @@
 </p>
 
 ## 实现细节
+
+### 角色控制与交互
+
+- `KnightController.cs`负责管理用户输入与状态机切换
+    - 二段跳逻辑：
+      ``` C#
+      // 角色位于地面时重置二段跳生效状态，检测到跳跃命令后赋予垂直速度
+      
+      // 角色位于空中时，检测到跳跃命令后判断二段跳生效条件（未使用过二段跳+有足够的技能点）
+      else if (!stopInput && Input.GetKeyDown(KeyCode.Space) &&
+               !doubleJumpUsed && skillManager.ConsumeSP(doubleJumpSP))
+      {
+          // 刷新垂直方向初速度，并标记二段跳生效
+      }
+      ```
+
+- `RunBehaviour.cs`、`GetHitBehaviour.cs` 等脚本在状态机进入动画事件时驱动对应动作逻辑
+
+- `PointsManager.cs` 为生命值/技能/冲刺实现通用的点数系统基类
+
 ### 高斯模糊
 
 - 使用双摄像机分离捕捉原图与发光图层。
